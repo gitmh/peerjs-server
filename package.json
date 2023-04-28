@@ -65,7 +65,6 @@
 		"build": "parcel build",
 		"lint": "eslint --ext .js,.ts . && npm run check",
 		"check": "tsc --noEmit",
-		"test": "npm run lint && jest",
 		"coverage": "jest --coverage",
 		"start": "node dist/bin/peerjs.js --port ${PORT:=9000}",
 		"dev": "nodemon --watch src -e ts --exec 'npm run build && npm run start'",
